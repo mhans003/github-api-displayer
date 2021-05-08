@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
+import React, { Fragment, Component } from 'react';
+import Navbar from './components/layout/Navbar';
 import './App.css';
 
 class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        
-      </div>
+      <Fragment>
+        <div className="App">
+          <Navbar/>
+        </div>
+      </Fragment>
     );
   } 
 }
