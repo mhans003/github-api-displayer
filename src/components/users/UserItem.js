@@ -1,18 +1,8 @@
 import React, { Component } from 'react'
 
 class UserItem extends Component {
-    constructor() {
-        //Need to call super() in order to use 'this'
-        super();
-        this.state = {
-            id: 'id',
-            login: 'lksjdlfkj',
-            avatar_url: '',
-            html_url: 'https://www.github.com/mhans003'
-        }
-    }
     render() {
-        const { login, avatar_url, html_url } = this.state;
+        const { login, avatar_url, html_url } = this.props.user;
         return (
             <div className="card text-center">
                 <img src={avatar_url} alt="" style={{ width: '60px' }}/> 
